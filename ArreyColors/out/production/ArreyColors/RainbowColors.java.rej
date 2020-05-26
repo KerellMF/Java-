@@ -1,0 +1,9 @@
+diff a/05_ArraysAndCollections/5.1/ArreyColors/src/RainbowColors.java b/05_ArraysAndCollections/5.1/ArreyColors/src/RainbowColors.java	(rejected hunks)
+@@ -9,6 +9,7 @@
+         for(int i = 0; i < colors.length; i++)
+         {
+             int reverseI = colors.length - 1 - i;
++            System.out.println(colors[reverseI]);
+         }
+     }
+ }
