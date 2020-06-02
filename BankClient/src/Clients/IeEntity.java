@@ -5,24 +5,14 @@ public class IeEntity extends Client
     @Override
     public void entryMoney (double money)
     {
-        double IeMoney = money;
+        double ieMoney = money;
 
-        if(IeMoney < 1000)
-        {
-            IeMoney = money - (money * 0.01);
-            super.entryMoney(IeMoney);
+        if(ieMoney < 1000) {
+            super.entryMoney(money - (money * 0.01) );
         }
-        else
-        {
-            IeMoney = money - (money * 0.005);
-            super.entryMoney(IeMoney);
+        else {
+            super.entryMoney(money - (money * 0.005));
         }
-    }
-
-    @Override
-    public void backMoney (double money)
-    {
-        super.money = money;
     }
 
 }

@@ -2,15 +2,14 @@ package Clients;
 
 public abstract class Client
 {
-    protected double money = 0;
+    private double money = 0;
 
     public void entryMoney (double money)
     {
         this.money += money;
     }
 
-    public void backMoney (double money)
-    {
+    public void backMoney (double money) {
         if (money >= money)
             this.money -= money;
         else
